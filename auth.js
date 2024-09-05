@@ -6,8 +6,7 @@ const generateToken = ()=>{
 }
 
 const validateToken = (token)=>{
-    const res = jwt.verify(token, privateKey)
-    console.log('res', res)
+    jwt.verify(token, privateKey)
 }
 
 module.exports = {

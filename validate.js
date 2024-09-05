@@ -7,7 +7,6 @@ const querySchema = Joi.object({
 
 const validateQueryParams = ({num1 , num2})=>{
     const result = querySchema.validate({num1 , num2});
-    console.log('result',result)
     if(result.error){
         throw new Error();   
     }
